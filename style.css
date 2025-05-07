@@ -1,0 +1,177 @@
+
+body{
+    padding:0;
+    margin:0;
+  }
+
+  body{
+    margin:0;
+    padding:0;
+    background: linear-gradient(180deg, #b3fbff, #4b9fd3);
+}
+
+header nav {
+    display: flex;
+    justify-content: center; /* Plaatst de items horizontaal in het midden */
+    align-items: center; /* Centreert de items verticaal */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex; /* Zorgt ervoor dat de items naast elkaar staan */
+    justify-content: center; /* Centreert de items horizontaal */
+    gap: 2em; /* Ruimte tussen de links */
+    margin-top:2em;
+    padding: 0;
+    background-color: azure;
+    border-radius: 30px;
+    padding: 1.5em 6em;
+    width:60%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+header nav ul li a {
+    text-decoration: none;
+    border-radius:30px;
+    color:#4bbdc3;
+}
+
+header nav ul li a:hover {
+    background: #4bbdc3;
+    color: white;
+    padding:.5em .9em;
+    transition: all .2s ease-in-out;
+    transform: translateY(10px);
+}
+
+.vis {
+    position: absolute;
+    left: -8em;
+    top: 100vh;
+  
+    animation: move 6s linear infinite;
+  
+    img {
+      width: 8em;
+  
+    }
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(calc(100vw + 8em));
+    }
+  }
+  
+  
+  
+  .dikkevis {
+    position: absolute;
+    left: -5em;
+    top: 65vh;
+  
+    animation: moveright 8s linear infinite;
+  
+    img {
+      width: 7em;
+    }
+  
+  
+  }
+  
+  
+  @keyframes moveright {
+    100% {
+      transform: translateX(0);
+    }
+  
+    0% {
+      transform: translateX(120vw);
+    }
+  
+  }
+  
+  
+  
+  .haai {
+    position: absolute;
+    left: -15em;
+    top: 11vh;
+  
+    animation: moverightt 6s linear infinite;
+  
+    img {
+      width: 15em;
+  
+    }
+  }
+  
+  @keyframes moverightt {
+    100% {
+      transform: translateX(0);
+    }
+  
+    0% {
+      transform: translateX(calc(100vw + 8em));
+    }
+  }
+  
+  
+  .blauwgelevis {
+    position: absolute;
+    left: -8em;
+    top: 30vh;
+  
+    animation: move 8s linear infinite;
+  
+    img {
+      width: 6em;
+  
+    }
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(calc(100vw + 8em));
+    }
+  }
+  
+  
+  
+  .engevis {
+    position: absolute;
+    left: -8em;
+    top: 120vh;
+  
+    animation: move 8s linear infinite;
+  
+    img {
+      width: 7em;
+  
+    }
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(calc(100vw + 8em));
+    }
+  }
+
+  img{
+    width:10%;
+    z-index:-1;
+}

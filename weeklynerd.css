@@ -1,0 +1,72 @@
+* {
+    font-family: "Quicksand", serif;
+}
+
+.shrikhand-regular {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+
+h1 {
+    font-family: "Shrikhand", sans-serif;
+    font-size: 2.5em;
+    color: #ffdd46;
+    text-align: center;
+    animation: float 5s infinite ease-in-out;
+    text-shadow: 2px 2px #fb8e3a;
+    margin-top:1.5em;
+
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0); /* Startpositie */
+    }
+    50% {
+        transform: translateY(-20px); /* Beweeg omhoog */
+    }
+    100% {
+        transform: translateY(0); /* Terug naar startpositie */
+    }
+}
+
+.containerwn {
+    display: grid; /* Activeer CSS Grid */
+    grid-template-columns: repeat(2, 1fr); /* Maak 2 gelijke kolommen */
+    gap: 3em; /* Voeg ruimte toe tussen de grid-items */
+    padding: 3em; /* Voeg padding toe rondom de container */
+    margin: 4em;
+    scroll-snap-type: y mandatory; /* Activeer scroll-snap voor verticale scroll */
+    overflow-y: scroll; /* Zorg ervoor dat de container scrollbaar is */
+    height: 100vh; /* Beperk de hoogte tot de viewport */
+}
+
+
+
+.wnsprekers {
+    background: rgba(242, 249, 251, 0.738); /* Witte achtergrond met transparantie */
+    border-radius: 10px; /* Maak de hoeken afgerond */
+    padding: 1.5em; /* Voeg padding toe binnen de secties */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Voeg een subtiele schaduw toe */
+    scroll-snap-align: start; /* Zorg ervoor dat elke sectie netjes uitlijnt bij scrollen */
+}
+
+.wnsprekers:hover {
+    background: rgba(242, 249, 251, 0.9); /* Verander de achtergrondkleur bij hover */
+    transform: translateY(5px); /* Beweeg de sectie 5px naar beneden */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Versterk de schaduw bij hover */
+}
+
+
+
+a{
+    text-decoration: none;
+    color:#2a878c;
+}
+
+
+

@@ -1,0 +1,71 @@
+* {
+    font-family: "Quicksand", serif;
+}
+
+.shrikhand-regular {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+
+h1 {
+    font-family: "Shrikhand", sans-serif;
+    font-size: 2.5em;
+    color: #ffdd46;
+    text-align: center;
+    text-shadow: 2px 2px #fb8e3a;
+    margin-top: 1.5em;
+    animation: float 5s infinite ease-in-out; /* Voegt een zweefanimatie toe aan de titel */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0); /* Startpositie */
+    }
+    50% {
+        transform: translateY(-20px); /* Beweeg omhoog */
+    }
+    100% {
+        transform: translateY(0); /* Terug naar startpositie */
+    }
+}
+
+/* Grid container styling */
+.containerld {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Twee kolommen */
+    gap: 2em; /* Ruimte tussen de items */
+    padding: 3em;
+    margin: 2em;
+}
+
+/* Styling voor de ul-elementen */
+.ld1 {
+    background: rgba(242, 249, 251, 0.738); /* Witte achtergrond met transparantie */
+    border-radius: 10px; /* Maak de hoeken afgerond */
+    padding: 1.5em; /* Voeg padding toe binnen de secties */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Voeg een subtiele schaduw toe */
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.ld1:hover {
+    background: rgba(242, 249, 251, 0.9); /* Verander de achtergrondkleur bij hover */
+    transform: translateY(5px); /* Beweeg de sectie 5px naar beneden */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Versterk de schaduw bij hover */
+}
+
+/* Styling voor de lijstitems */
+.ld1 li {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.ld1 p {
+    margin-top: 0.5em;
+    line-height: 1.6;
+    color: #555;
+}
