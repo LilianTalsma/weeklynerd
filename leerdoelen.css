@@ -18,46 +18,73 @@ h1 {
     text-align: center;
     text-shadow: 2px 2px #fb8e3a;
     margin-top: 1.5em;
-    animation: float 5s infinite ease-in-out; /* Voegt een zweefanimatie toe aan de titel */
+    animation: float 5s infinite ease-in-out; 
 }
 
 @keyframes float {
     0% {
-        transform: translateY(0); /* Startpositie */
+        transform: translateY(0); 
     }
     50% {
-        transform: translateY(-20px); /* Beweeg omhoog */
+        transform: translateY(-20px);
     }
     100% {
-        transform: translateY(0); /* Terug naar startpositie */
+        transform: translateY(0); 
     }
 }
 
-/* Grid container styling */
+
 .containerld {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Twee kolommen */
-    gap: 2em; /* Ruimte tussen de items */
-    padding: 3em;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em; 
+ 
     margin: 2em;
 }
 
-/* Styling voor de ul-elementen */
-.ld1 {
-    background: rgba(242, 249, 251, 0.738); /* Witte achtergrond met transparantie */
-    border-radius: 10px; /* Maak de hoeken afgerond */
-    padding: 1.5em; /* Voeg padding toe binnen de secties */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Voeg een subtiele schaduw toe */
+
+.containerld li{
+    list-style: none;
+    background: rgba(242, 249, 251, 0.738); 
+    border-radius: 10px; 
+    padding: 1.5em; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.ld1:hover {
-    background: rgba(242, 249, 251, 0.9); /* Verander de achtergrondkleur bij hover */
-    transform: translateY(5px); /* Beweeg de sectie 5px naar beneden */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Versterk de schaduw bij hover */
+li:hover {
+    background: rgba(242, 249, 251, 0.9); 
+    transform: translateY(5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
 }
 
-/* Styling voor de lijstitems */
+.containerld h2{
+    text-shadow: 2px 2px #ffdd46;
+    color: #fb8e3a;;
+    text-align: center;
+    animation: floats 8s infinite ease-in-out;
+    background: rgba(242, 249, 251, 0.738); 
+    border-radius: 10px; 
+    width:50%;
+    padding:.5em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin-left:6em;
+}
+
+@keyframes floats {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+
+
 .ld1 li {
     margin-bottom: 1em;
     font-size: 1.1em;

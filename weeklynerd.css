@@ -24,41 +24,61 @@ h1 {
 
 @keyframes float {
     0% {
-        transform: translateY(0); /* Startpositie */
+        transform: translateY(0);
     }
     50% {
-        transform: translateY(-20px); /* Beweeg omhoog */
+        transform: translateY(-20px);
     }
     100% {
-        transform: translateY(0); /* Terug naar startpositie */
+        transform: translateY(0); 
     }
 }
 
 .containerwn {
-    display: grid; /* Activeer CSS Grid */
-    grid-template-columns: repeat(2, 1fr); /* Maak 2 gelijke kolommen */
-    gap: 3em; /* Voeg ruimte toe tussen de grid-items */
-    padding: 3em; /* Voeg padding toe rondom de container */
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em; 
+    padding: 3em;
     margin: 4em;
-    scroll-snap-type: y mandatory; /* Activeer scroll-snap voor verticale scroll */
-    overflow-y: scroll; /* Zorg ervoor dat de container scrollbaar is */
-    height: 100vh; /* Beperk de hoogte tot de viewport */
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll; 
+    height: 100vh;
 }
 
 
 
 .wnsprekers {
-    background: rgba(242, 249, 251, 0.738); /* Witte achtergrond met transparantie */
-    border-radius: 10px; /* Maak de hoeken afgerond */
-    padding: 1.5em; /* Voeg padding toe binnen de secties */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Voeg een subtiele schaduw toe */
-    scroll-snap-align: start; /* Zorg ervoor dat elke sectie netjes uitlijnt bij scrollen */
+    background: rgba(242, 249, 251, 0.738); 
+    border-radius: 10px; 
+    padding: 1.5em; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start; 
 }
 
 .wnsprekers:hover {
-    background: rgba(242, 249, 251, 0.9); /* Verander de achtergrondkleur bij hover */
-    transform: translateY(5px); /* Beweeg de sectie 5px naar beneden */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Versterk de schaduw bij hover */
+    background: rgba(242, 249, 251, 0.9); 
+    transform: translateY(5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wnsprekers h3{
+    text-shadow: 2px 2px #ffdd46;
+    color: #fb8e3a;;
+    text-align: center;
+    animation: floats 8s infinite ease-in-out;
+
+}
+
+@keyframes floats {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0); 
+    }
 }
 
 
