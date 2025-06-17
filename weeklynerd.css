@@ -35,6 +35,7 @@ h1 {
     font-family: "Quicksand", serif;
     transition: transform 0.3s ease, background 0.3s ease;
     margin-left:auto;
+    text-align: center;
 }
 
 .inhoudsopgave summary {
