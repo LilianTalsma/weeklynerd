@@ -26,6 +26,15 @@ h2{
     animation: floats 8s infinite ease-in-out;
 }
 
+h3{
+    text-shadow: 2px 2px #ffdd46;
+    color: #fb8e3a;
+    text-align: center;
+    animation: floats 8s infinite ease-in-out;
+}
+
+
+
 @keyframes floats {
     0% {
         transform: translateY(0);
@@ -46,7 +55,7 @@ h2{
 }
 
 /* Container voor de leerdoelen */
-.containerld {
+.containervakken {
     max-width: 1200px;
     margin: 2em auto;
     padding: 1em;
@@ -55,14 +64,14 @@ h2{
 
 
 /* De lijsten mooi maken */
-ul.ld1 {
+.vakken1 {
     list-style: none;
     padding: 0;
     margin: 0 auto 3em auto;
     max-width:80vw;
 }
 
-ul.ld1 li{
+.vakken1 p{
     background: rgba(248, 253, 254, 0.9);
     border-radius: 10px;
     padding: 1.5em;
@@ -71,23 +80,20 @@ ul.ld1 li{
     transition: transform 0.3s ease, background 0.3s ease;
 }
 
-ul.ld1 li:hover {
+.vakken1 p:hover {
     background: rgba(248, 253, 254, 1);
     transform: translateY(-5px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-.uitleg{
-    max-width: 90%;
-    margin: 0 auto;
-}
+
 
 
 
 
 @media (max-width: 768px) {
 
-    .containerld {
+    .containervakken {
         padding: 1em;
     }
 

@@ -1,15 +1,13 @@
 * {
     font-family: "Quicksand", serif;
+    box-sizing: border-box;
 }
 
 .shrikhand-regular {
     font-family: "Shrikhand", serif;
     font-weight: 400;
     font-style: normal;
-  }
-
-
-
+}
 
 h1 {
     font-family: "Shrikhand", sans-serif;
@@ -18,41 +16,83 @@ h1 {
     text-align: center;
     animation: float 5s infinite ease-in-out;
     text-shadow: 2px 2px #fb8e3a;
-    margin-top:1.5em;
-
+    margin-top: 1.5em;
 }
 
 @keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-    100% {
-        transform: translateY(0); 
-    }
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
 }
 
+.inhoudsopgave {
+    margin: 2em;
+    max-width: 300px;
+    background: rgba(242, 249, 251, 0.738);
+    border-radius: 10px;
+    padding: .5em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Quicksand", serif;
+    transition: transform 0.3s ease, background 0.3s ease;
+    margin-left:auto;
+}
+
+.inhoudsopgave summary {
+    /* font-family: "Shrikhand", sans-serif; */
+    /* font-size: 1.8em; */
+    color: #2a878c;
+    /* text-shadow: 2px 2px #fb8e3a; */
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    margin-bottom: 1em;
+}
+
+.inhoudsopgave ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.inhoudsopgave li {
+    margin: 0.5em 0;
+}
+
+.inhoudsopgave a {
+    text-decoration: none;
+    color: #2a878c;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.inhoudsopgave a:hover {
+    color: #fb8e3a;
+}
+
+.inhoudsopgave:hover {
+    background: rgba(242, 249, 251, 0.9);
+    transform: translateY(5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Container zonder scroll-snap, netjes gecentreerd */
 .containerwn {
     display: grid; 
     grid-template-columns: repeat(2, 1fr);
-    gap: 3em; 
-    padding: 3em;
-    margin: 4em;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll; 
-    height: 100vh;
+    gap: 2em; 
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 1200px;
 }
 
-
-
+/* De blokken zelf */
 .wnsprekers {
     background: rgba(242, 249, 251, 0.738); 
     border-radius: 10px; 
     padding: 1.5em; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    scroll-snap-align: start; 
+    transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .wnsprekers:hover {
@@ -61,32 +101,29 @@ h1 {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-.wnsprekers h3{
+.wnsprekers h3 {
     text-shadow: 2px 2px #ffdd46;
-    color: #fb8e3a;;
+    color: #fb8e3a;
     text-align: center;
     animation: floats 8s infinite ease-in-out;
-
 }
 
 @keyframes floats {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0); 
-    }
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
 }
 
-
-
-a{
+a {
     text-decoration: none;
-    color:#2a878c;
+    color: #2a878c;
 }
 
-
-
+/* Responsive: bij kleinere schermen 1 kolom */
+@media (max-width: 768px) {
+    .containerwn {
+        grid-template-columns: 1fr;
+        padding: 1em;
+        margin: 1em auto;
+    }
+}

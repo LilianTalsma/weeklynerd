@@ -6,6 +6,14 @@
     background: linear-gradient(180deg, #b3fbff, #4b9fd3);
 }
 
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+}
+
 header nav {
     display: flex;
     justify-content: center; 
